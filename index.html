@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<style type="text/css" id="dark-mode-custom-style" lang="en"></style>
+<style type="text/css" id="dark-mode-native-style" lang="en"></style>
+<style type="text/css" id="dark-mode-native-sheet" lang="en"></style>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Crown Cafe</title>
+  <meta name="description"
+    content="Crown Cafe is a breakfast & lunch resturant serving the wonderful people of Watertown, MA with the best quality food." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://kit.fontawesome.com/81232dd9da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/crowncafe.css">
+  <script src="src/prompt.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <nav class="w3-panel w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card">
+      <img class="w3-bar-item" style="height: 64px;" src="/imgs/site-icon.png" alt="Crown Cafe Logo">
+      <a href="#home" class="w3-bar-item w3-button w3-xlarge"><b>Crown</b> Café</a>
+      <div class="w3-contianer">
+        <a href="https://online.skytab.com/ae733984e3cd466dfd43574969824e76/">
+          <button class="w3-bar-item button-blue"><span class="w3-hide-small">Order for </span><b>Pick-up</b></button>
+        </a>
+        <a href="https://order.online/business/crown-cafe-234709">
+          <button class="w3-bar-item button-red"><span class="w3-hide-small">Order on </span><b>DoorDash</b></button>
+        </a>
+        <a href="https://crowncafe-ma.dine.online">
+          <button class="w3-bar-item button-orange"><span class="w3-hide-small">Order on</span>
+            <b>Grubhub</b></button></a>
+      </div>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <button class="w3-bar-item"><a href="#menu">Menu</a></button>
+        <button class="w3-bar-item"><a href="#contact">Contact</a></button>
+        <button class="w3-bar-item"><a href="#reviews">Reviews</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hiring banner at the bottom
+  <div class="w3-panel w3-blue w3-margin-right w3-bottom w3-round-xlarge w3-padding">
+    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-white w3-large w3-display-topright"><i
+        class="fa-regular fa-x"></i></span>
+    <h2 class="w3-margin-left w3-center"> <p><b> ⚡ We are hiring! ⚡</b></p> If you are interested in a server job, <a
+        href="https://www.indeed.com/job/servercashierhost-f34320905bd0f703" class="">apply now on Indeed. 📃</a>
+    </h2>
+  </div> -->
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1200px; margin-top: 64px;" id="home">
+    <img class="w3-image" src="imgs/main.jpg" alt="Inside view, Crown Cafe, Watertown" width="1560" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-text-white" style="translate:0px -2px;">
+        <span class="w3-padding w3-black w3-opacity-min w3-xxxlarge"><b>Crown</b></span>
+        <span class="w3-padding w3-green w3-opacity-min w3-hide-small w3-text-light-grey w3-xxxlarge">Café</span>
+      </h1>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1264px">
+
+    <!-- Menu Section -->
+    <div class="w3-container" id="menu">
+    </div>
+
+    <div class="w3-display-container w3-padding">
+      <h2>Menu</h2>
+      <a class="w3-display-topright" href="assets/crowncafe-menu.pdf">
+        <button class="button-green">Full Menu</button>
+      </a>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Walnut Cake | <b>$5</b></div>
+          <div class="w3-display-topright w3-deep-purple w3-padding w3-small">✨Weekend Special✨</div>
+          <img src="imgs/walnut-cake.jpg" alt="Walnut Cake" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Egg Plate | <b>$7</b></div>
+          <img src="imgs/egg-plate.jpg" alt="Egg Plate" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Egg Sandwich | <b>$6.25</b></div>
+          <img src="imgs/egg-sandwich.jpg" alt="Egg Sandwich" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Pancakes | <b>$6.50</b></div>
+          <img src="imgs/pancakes.jpg" alt="Pancakes" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">French Toast | <b>$6</b></div>
+          <img src="imgs/french-toast.jpg" alt="French Toast" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Denver Omelet | <b>$9</b></div>
+          <img src="imgs/denver-omelet.jpg" alt="Denver Omelet" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Bacon & Cheese Omelet | <b>$10</b></div>
+          <img src="imgs/bacon-omelet.jpg" alt="Bacon Omelet" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding">Caesar Salad | <b>$12</b></div>
+          <img src="imgs/caesar-salad.jpg" alt="Caesar Salad" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container w3-card-4">
+          <div class="w3-display-bottomleft w3-black w3-padding"> Persian Chicken Kotlet | <b>$12</b></div>
+          <img src="imgs/kotlet-plate-chicken.jpg" alt="Kotlet Plate (Chicken)" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-container w3-center  w3-large">
+        <a href="assets/crowncafe-menu.pdf">View the full menu <i class="fa fa-link"></i></a>
+      </div>
+    </div>
+
+    <!-- Hours and Info -->
+    <div class="w3-row-padding w3-padding-16">
+      <h2 class="w3-padding-16">Opening Hours & Location</h2>
+      <table class="w3-table w3-striped w3-half">
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Closed</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>8am to 2pm</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8am to 2pm</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>8am to 2pm</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>8am to 2pm</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9am to 2pm</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>9am to 2pm</td>
+        </tr>
+
+      </table>
+
+      <iframe class="w3-half"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.8526355211234!2d-71.18924948487643!3d42.36697974265773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e378067d033071%3A0xdc85c8cf233a1807!2sCrown%20Cafe!5e0!3m2!1sen!2sus!4v1671819275814!5m2!1sen!2sus"
+        width="100%" height="310px" style="border:0; margin-top: 16px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Catering -->
+    <h2>Catering & Events</h2>
+    <div class="w3-row-padding">
+      <!-- <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./imgs/cakes/cake1.jpg" alt="John" style="width:100%">
+        <h3>John Doe</h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div> -->
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./imgs/cakes/cake2.jpg" alt="Jane" style="width:100%">
+        <h3>Event Space</h3>
+        <p>If you have an event or a party and you're looking for a space, you've come to the right spot!
+          We offer space for afternoon and evening events, birthdays, reunions, or other gatherings. Get in touch for
+          details.
+        </p>
+        <a href="mailto:contact@crowncafema.com" style="text-decoration:none;">
+          <button class="w3-button w3-light-grey w3-block">Contact</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <h2 class="w3-padding-16">Google Reviews</h2>
+    <!-- First Row -->
+    <div class="w3-row-padding">
+      <!-- Review 0 -->
+      <div class="w3-container w3-col l3 m6">
+        <div class="w3-display-container w3-mobile w3-padding w3-card-4 w3-margin-bottom">
+          <div class="w3-display-container">
+            <img class="w3-left w3-margin-right" width="20%"
+              src="https://lh3.googleusercontent.com/a-/AD5-WCkKKg-ddwDbfFSMXvXAHS_80z_MakK4iJ3d98feidk=w83-h83-p-rp-mo-ba2-br100"
+              alt="">
+            <div class="w3-left"><b>Eugene Hsu</b><br><span class="w3-text-grey">12/25/2022</span><br></div>
+          </div>
+          <div class="w3-display-container">
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <br><br>Open on Christmas, friendly staff, excellent food at a very reasonable price. Great for family as
+            well. Would definitely come back. <a href="https://goo.gl/maps/TJbHsysyY7RJHTyC7">Read more...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Review 1 -->
+      <div class="w3-container w3-col l3 m6">
+        <div class="w3-display-container w3-mobile w3-padding w3-card-4 w3-margin-bottom">
+          <div class="w3-display-container">
+            <img class="w3-left w3-margin-right" width="20%"
+              src="https://lh3.googleusercontent.com/a/AEdFTp4Rlyv7o-VrQe-MyOEI1_ibEZ45-Rwhcdj30bEV=s120-c-c0x00000000-cc-rp-mo-ba4-br100"
+              alt="">
+            <div class="w3-left"><b>Derek77</b><br><span class="w3-text-grey">07/23/2022</span><br></div>
+          </div>
+          <div class="w3-display-container">
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <br><br>One of the best breakfast places in Boston. Absolutely delicious and delectable in every possible
+            way. The quality of the food was excellent. It was also very, very well prepared. <a
+              href="https://www.google.com/maps/contrib/104223548339844112233?hl=en-US">Read more...</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="w3-container w3-col l3 m6">
+        <div class="w3-display-container w3-mobile w3-padding w3-card-4 w3-margin-bottom">
+          <div class="w3-display-container">
+            <img class="w3-left w3-margin-right" width="20%"
+              src="https://lh3.googleusercontent.com/a-/AD5-WCl6Wakb8nXP2opzVFex1ShzYReuc9-sPVVVJ8_PyQ=s120-c-c0x00000000-cc-rp-mo-ba3-br100"
+              alt="">
+            <div class="w3-left"><b>Boris B.</b><br><span class="w3-text-grey">03/06/2022</span><br></div>
+          </div>
+          <div class="w3-display-container">
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <br><br>Really good breakfast. Sunny side up with cheddar. I wasnt even sure what that would be like but did
+            an amazing
+            job. Very nice friendly service and food came out like instantly. It was awesome. <a
+              href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlZ05uOGFBEAE!2m1!1s0x0:0xdc85c8cf233a1807!3m1!1s2@1:CIHM0ogKEICAgIDegNn8aA%7CCgsIpejRmQYQ0ISzDA%7C?hl=en-US">Read
+              more...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="w3-container w3-col l3 m6">
+        <div class="w3-display-container w3-mobile w3-padding w3-card-4 w3-margin-bottom">
+          <div class="w3-display-container">
+            <img class="w3-left w3-margin-right" width="20%"
+              src="https://lh3.googleusercontent.com/a-/AD5-WCmVSiB52BnNocjm8aLaS7iWzxfh7QHlrHFQGgrQIA=s120-c-c0x00000000-cc-rp-mo-ba5-br100"
+              alt="">
+            <div class="w3-left"><b>Victoria J.</b><br><span class="w3-text-grey">09/28/2022</span><br></div>
+          </div>
+          <div class="w3-display-container">
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <br><br>Excellent breakfast... French toast better than my mom's..... Denver omelet was so full of stuffing,
+            loved the fresh peppers!
+            <a
+              href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlZ05uOGFBEAE!2m1!1s0x0:0xdc85c8cf233a1807!3m1!1s2@1:CIHM0ogKEICAgIDegNn8aA%7CCgsIpejRmQYQ0ISzDA%7C?hl=en-US">Read
+              more...</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <!-- <div class="w3-container w3-col l3 m6">
+        <div class="w3-display-container w3-mobile w3-padding w3-card-4 w3-margin-bottom">
+          <div class="w3-display-container">
+            <img class="w3-left w3-margin-right" width="20%"
+              src="https://lh3.googleusercontent.com/a-/AD5-WClv1jyVPWnqxxb8uNm_IBiAYOvdG3O3YkobtntVJQ=s120-c-c0x00000000-cc-rp-mo-ba4-br100"
+              alt="">
+            <div class="w3-left"><b>Samuel H.</b><br><span class="w3-text-grey">03/26/2022</span><br></div>
+          </div>
+          <div class="w3-display-container">
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <i class="fa fa-star" style="color:gold;" aria-hidden="true"></i>
+            <br><br>Delicious. I got Persian Spinach Omelette, which was top notch. Great coffee, hash browns, and
+            pancakes. Very friendly. Give these folks your support! <a
+              href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlZ05uOGFBEAE!2m1!1s0x0:0xdc85c8cf233a1807!3m1!1s2@1:CIHM0ogKEICAgIDegNn8aA%7CCgsIpejRmQYQ0ISzDA%7C?hl=en-US">Read
+              more...</a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="w3-large w3-container w3-padding w3-margin-bottom w3-center">
+        <a href="https://search.google.com/local/reviews?placeid=ChIJcTADfQZ444kRBxg6I8_Ihdw&authuser=0&hl=en&gl=US"
+          target="_blank" rel="noopener noreferrer">
+          More Reviews on Google <i class="fa fa-link"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-card-4 w3-margin-bottom" id="contact">
+      <h3 class="w3-border-bottom w3-padding-16">Contact</h3>
+      <p>If you have any business inquiries, please leave your message below and we will get back to you!</p>
+      <form action="src/action_page.php" method="get" target="_blank">
+        <input class="w3-input w3-section w3-border w3-round" type="text" placeholder="Name" required="" name="Name">
+        <input class="w3-input w3-section w3-border w3-round" type="text" placeholder="Email" required="" name="Email">
+        <input class="w3-input w3-section w3-border w3-round" type="text" placeholder="Subject" required=""
+          name="Subject">
+        <input class="w3-input w3-section w3-border w3-round" type="text" placeholder="Comment" required=""
+          name="Comment">
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane w3-ripple"></i> Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-black w3-padding-16">
+    <img alt="Credit Card Logos" title="Credit Card Logos"
+      src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-5.png" width="256px" max-width="200px" />
+    <p>Copyright 2022, Crown Cafe &copy; | Designed with &#10084; by <a href="1ssepehr.github.io">Sepehr Madani</a>.
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">W3.CSS</a> framework.</p>
+  </footer>
+
+
+</body>
+
+</html>
