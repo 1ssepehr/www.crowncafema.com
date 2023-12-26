@@ -33,6 +33,21 @@ nav button {
   cursor: pointer;
 }
 
+th {
+  text-align: center;
+  font-size: 22px;
+  padding: 4px;
+}
+
+th:first-child {
+  text-align: right;
+}
+
+/* first column right aligned */
+td:first-child {
+  text-align: right;
+}
+
 button:hover {
   color: white;
   background-color: black;
